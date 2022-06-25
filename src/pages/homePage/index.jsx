@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
-import userImg from "../../assets/img/perfil.png";
 import htmlImg from "../../assets/img/html5.png";
 import cssImg from "../../assets/img/css.png";
 import jsImg from "../../assets/img/javascript.png";
@@ -13,16 +11,15 @@ import {
   CssBox,
   JsBox,
   ReactBox,
-  AboutMeSection,
-  ProfileImgBox,
-  ProfileDescBox,
 } from "./style";
 import NavigationBar from "../../components/Navigation";
-import { css } from "styled-components";
+import AboutMe from "../../components/AboutMe";
+import Technologies from "../../components/Technologies";
+import { useScrollTo } from "../../providers/scroll";
 
 const HomePage = () => {
-  const testRef = useRef(null);
-  const scroll = () => testRef.current.scrollIntoView();
+  const { homeRef, aboutMeRef, skillsRef } = useScrollTo();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -31,8 +28,8 @@ const HomePage = () => {
       transition={{ duration: 1 }}
     >
       <MainContainer>
-        {/* <NavigationBar /> */}
-        <LandingSection>
+        <NavigationBar />
+        <LandingSection ref={homeRef}>
           <AtomContainer>
             <h1>
               <span>Olá,</span> sou Kennedy
@@ -52,24 +49,10 @@ const HomePage = () => {
             </ReactBox>
           </AtomContainer>
         </LandingSection>
-        <AboutMeSection></AboutMeSection>
+        <AboutMe ref={aboutMeRef} />
+        <Technologies ref={skillsRef} />
       </MainContainer>
     </motion.div>
   );
 };
 export default HomePage;
-
-{
-  /* <Container> */
-}
-{
-  /* <h1>HOME</h1> */
-}
-{
-  /* <button onClick={() => scroll()}>SCROLL</button> */
-}
-{
-  /* </Container> */
-}
-
-// <ContainerTest ref={testRef} />

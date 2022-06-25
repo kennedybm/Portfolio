@@ -20,11 +20,12 @@ export const MainContainer = styled.main`
   align-items: center;
   background-color: var(--black);
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
+  overflow: auto;
 `;
 
 export const LandingSection = styled.section`
-  height: 50%;
+  height: 65vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,6 +42,7 @@ export const AtomContainer = styled.div`
   background-color: var(--primary);
   border: 1px solid var(--second);
   border-radius: 50%;
+  margin-left: 20px;
   position: relative;
   animation: ${AnimationDivScale} 3s;
   h1 {

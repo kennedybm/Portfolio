@@ -11,45 +11,15 @@ const Colors = (props) => {
 };
 
 export const StyledButton = styled.button`
+  display: flex;
+  justify-content: center;
   background: ${(props) => Colors(props.colorSchema)};
-
-  /* color: var(--grey-4);
-
-  width: 250px;
-  height: 35px;
-
+  transform: ${(props) => props.type === "bottom" && "rotate(-180deg)"};
   border: none;
-  border-radius: 5px;
-
-  font-weight: 600;
-  font-size: 15px;
-  font-family: Nunito;
-
-  transition: 0.5s;
-
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
-
-  ${(props) =>
-    props.colorSchema === "--primary-gradient" &&
-    css`
-      &:hover {
-        transform: scale(1.05);
-      }
-    `};
-
-  ${(props) =>
-    props.colorSchema === "--grey-1" &&
-    css`
-      &:hover {
-        background: #343b41;
-      }
-    `};
-
-  ${(props) =>
-    props.colorSchema === "--primary-negative" &&
-    css`
-      &:hover {
-        background: #868e96;
-      }
-    `}; */
+  margin: 3px 0px 3px 0px;
+  font-size: 19px;
+  &:hover {
+    color: var(--decor);
+    font-size: 27px;
+  }
 `;
