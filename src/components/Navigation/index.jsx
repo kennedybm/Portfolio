@@ -9,33 +9,50 @@ import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 
 const NavigationBar = () => {
-  const { homeRef, aboutMeRef, scroll } = useScrollTo();
+  const { scroll } = useScrollTo();
+
   return (
     <NavContainer>
       <Button
-        ref={homeRef}
         onClick={() => scroll("home")}
         colorSchema={"--second"}
+        type="default"
       >
         <RiHomeSmile2Line />
       </Button>
       <Button
-        ref={aboutMeRef}
         onClick={() => scroll("about")}
         colorSchema={"--second"}
+        type="default"
       >
         <BiUserPin />
       </Button>
-      <Button onClick={() => scroll("skills")} colorSchema={"--second"}>
+      <Button
+        onClick={() => scroll("skills")}
+        colorSchema={"--second"}
+        type="default"
+      >
         <VscTools />
       </Button>
-      <Button colorSchema={"--second"}>
+      <Button
+        onClick={() => scroll("certificates")}
+        colorSchema={"--second"}
+        type="default"
+      >
         <FaIcons.FaGraduationCap />
       </Button>
-      <Button colorSchema={"--second"}>
+      <Button
+        onClick={() => scroll("projects")}
+        colorSchema={"--second"}
+        type="default"
+      >
         <FaIcons.FaLaptopCode />
       </Button>
-      <Button colorSchema={"--second"} type="bottom">
+      <Button
+        onClick={() => scroll("footer")}
+        colorSchema={"--second"}
+        type="bottom"
+      >
         <RiHomeSmile2Line />
       </Button>
     </NavContainer>

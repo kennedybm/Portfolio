@@ -1,6 +1,11 @@
 import { ScrollToProvider } from "./scroll";
+import { ModalProvider } from "./modal";
 
 const Providers = ({ children }) => {
-  return <ScrollToProvider>{children}</ScrollToProvider>;
+  return (
+    <ScrollToProvider>
+      <ModalProvider>{children}</ModalProvider>
+    </ScrollToProvider>
+  );
 };
 export default Providers;

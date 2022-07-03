@@ -3,11 +3,13 @@ import styled, { css } from "styled-components";
 const Colors = (props) => {
   return props === "--second"
     ? "var(--second)"
-    : props === "--grey-1"
-    ? "var(--grey-1)"
-    : props === "--negative"
-    ? "var(--negative)"
-    : props === "--grey-3" && "var(--grey-3)";
+    : props === "--decor"
+    ? "var(--decor)"
+    : props === "--primary"
+    ? "var(--primary)"
+    : props === "--black"
+    ? "var(--black)"
+    : props === "transparent" && "transparent";
 };
 
 export const StyledButton = styled.button`
@@ -16,10 +18,16 @@ export const StyledButton = styled.button`
   background: ${(props) => Colors(props.colorSchema)};
   transform: ${(props) => props.type === "bottom" && "rotate(-180deg)"};
   border: none;
-  margin: 3px 0px 3px 0px;
+  /* margin: 3px 0px 3px 0px; */
   font-size: 19px;
   &:hover {
-    color: var(--decor);
-    font-size: 27px;
+    color: ${(props) =>
+      props.type === "unset" ? "var(--second)" : "var(--decor)"};
+    font-size: ${(props) =>
+      props.type === "unset"
+        ? "14.8px"
+        : props.type === "default"
+        ? "27px"
+        : props.type === "nohover" && "19px"};
   }
 `;

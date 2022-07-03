@@ -50,39 +50,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-h1{
-	font-family: Oleo Script;
+h1 h2 h3 p span{
+	font-family: 'Poppins', sans-serif;
 }
 html{
 	scroll-behavior: smooth;
-	/* scroll-padding-top: 100px; */
+	
+}
+body{
+	&::-webkit-scrollbar {
+    width: 15px;
+	background-color: var(--primary);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--second);
+    border-radius: 3px;
+  }
 }
 `;
 
 export default GlobalStyle;
-
-/* --primary: #FFE100;
-	--primary-gradient: linear-gradient(135deg, #FFE100 0%, #FFE100 60%, #FFFFFF 100%);
-	--grey-0: #F8F9FA;
-	--grey-1: #868e96;
-	--grey-2: #343B41;
-	--grey-3: #212529;
-	--grey-4: #121214;
-	--success: #3FE864;
-	--negative: #e83f5b;
-	--opacity: rgba(0, 0, 0, 0.8);
-
-	--regular: 400;
-	--semi-bold: 600;
-	--bold: 800;
-
-	--toastify-font-family: Nunito;
-	--toastify-icon-color-success: var(--primary);
-	--toastify-color-progress-success: var(--primary);
-
-	background-image: url("cinema_wallpaper.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-		min-height: 100vh;
-	line-height: 1;
-	min-height:100vh; */

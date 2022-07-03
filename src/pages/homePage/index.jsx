@@ -15,10 +15,20 @@ import {
 import NavigationBar from "../../components/Navigation";
 import AboutMe from "../../components/AboutMe";
 import Technologies from "../../components/Technologies";
+import Certificates from "../../components/Certificates";
+import Projects from "../../components/Projects";
+import Footer from "../../components/Footer";
 import { useScrollTo } from "../../providers/scroll";
 
 const HomePage = () => {
-  const { homeRef, aboutMeRef, skillsRef } = useScrollTo();
+  const {
+    homeRef,
+    aboutMeRef,
+    skillsRef,
+    certificatesRef,
+    projectsRef,
+    footerRef,
+  } = useScrollTo();
 
   return (
     <motion.div
@@ -32,7 +42,7 @@ const HomePage = () => {
         <LandingSection ref={homeRef}>
           <AtomContainer>
             <h1>
-              <span>Olá,</span> sou Kennedy
+              <span>Olá,</span> sou Kennedy Barreto
             </h1>
             <p>Web Developer</p>
             <HtmlBox>
@@ -51,6 +61,9 @@ const HomePage = () => {
         </LandingSection>
         <AboutMe ref={aboutMeRef} />
         <Technologies ref={skillsRef} />
+        <Certificates ref={certificatesRef} />
+        <Projects ref={projectsRef} />
+        <Footer ref={footerRef} />
       </MainContainer>
     </motion.div>
   );
