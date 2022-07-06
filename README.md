@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+Desenvolvi este portifólio para mostrar um pouco do que aprendi até agr, com alguns projetos e informações sobre mim.
+Foi desenvolvido apenas com JavaScript, ReactJS, Styled Components: https://portifolio-kennedybm.vercel.app/
+
+
+>>>>>>> 2b99b43902f2ac4b2ebc5c2cb90bb8bf7b84ce6b
