@@ -18,9 +18,13 @@ import Technologies from "../../components/Technologies";
 import Certificates from "../../components/Certificates";
 import Projects from "../../components/Projects";
 import Footer from "../../components/Footer";
+import Languages from "../../components/Languages";
 import { useScrollTo } from "../../providers/scroll";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   const {
     homeRef,
     aboutMeRef,
@@ -42,9 +46,10 @@ const HomePage = () => {
         <LandingSection ref={homeRef}>
           <AtomContainer>
             <h1>
-              <span>Olá,</span> sou Kennedy Barreto
+              <span>{t("title.one")}</span>
+              {t("title.two")}
             </h1>
-            <p>Web Developer</p>
+            <p>{t("title.three")}</p>
             <HtmlBox>
               <img src={htmlImg} alt="" />
             </HtmlBox>
@@ -59,6 +64,7 @@ const HomePage = () => {
             </ReactBox>
           </AtomContainer>
         </LandingSection>
+        <Languages />
         <AboutMe ref={aboutMeRef} />
         <Technologies ref={skillsRef} />
         <Certificates ref={certificatesRef} />

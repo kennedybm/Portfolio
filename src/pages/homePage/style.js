@@ -8,10 +8,10 @@ const AtomDiv = keyframes`
 const AnimationDivScale = keyframes`
  0%{
   transform:scale(.1);
-  } 
+  }
   100%{
     transform:scale(1);
-  } 
+  }
 `;
 
 export const MainContainer = styled.main`
