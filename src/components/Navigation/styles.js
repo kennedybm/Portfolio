@@ -7,7 +7,7 @@ export const NavContainer = styled.nav`
   width: 32px;
   height: 170px;
   position: fixed;
-  left: 2%;
+  right: 2%;
   top: 33%;
   z-index: 1;
   background-color: var(--second);
@@ -18,7 +18,7 @@ export const NavContainer = styled.nav`
     margin: 3px 0px 3px 0px;
   }
   @media (min-width: 1024px) {
-    left: 5%;
+    right: 0.5%;
     width: 45px;
     height: 255px;
     button {

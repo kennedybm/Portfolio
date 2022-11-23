@@ -1,33 +1,69 @@
 import { forwardRef } from "react";
 import { useScrollTo } from "../../providers/scroll";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import Button from "../Button";
 import {
   TechnologiesSection,
   TechnologiesContainer,
-  BackBox,
-  FrontBox,
-  DotsBox,
-  Img,
+  TechsBox,
+  ButtonsContainer,
+  ImgBox,
+  TextBox,
 } from "./style";
-import * as Fcbuttons from "react-icons/fc";
-import { GiSandsOfTime } from "react-icons/gi";
-import htmlImg from "../../assets/img/html5.png";
-import cssImg from "../../assets/img/css.png";
-import jsImg from "../../assets/img/javascript.png";
-import reactImg from "../../assets/img/react.png";
-import typescriptImg from "../../assets/img/typescript.png";
-import nodeJsImg from "../../assets/img/nodejs.png";
-import expressImg from "../../assets/img/express.png";
-import postgresqlImg from "../../assets/img/postgresql.png";
+import { techList } from "../../data/techs";
 
 const Technologies = forwardRef((props, ref) => {
-  const { carouselRef, scroll } = useScrollTo();
+  const [techs, setTechs] = useState("front");
+
+  const frontTechs = techList.filter((item) => item.category === "front-end");
+  const backTechs = techList.filter((item) => item.category === "back-end");
+
+  const { carouselRef } = useScrollTo();
+
+  const { t } = useTranslation();
 
   return (
     <TechnologiesSection ref={ref}>
-      <h2>Tecnologias</h2>
+      <h2>{t("technologies.title")}</h2>
+      <ButtonsContainer>
+        <Button onClick={() => setTechs("front")} colorSchema={"--second"}>
+          Front End
+        </Button>
+        <Button onClick={() => setTechs("back")} colorSchema={"--second"}>
+          Back End
+        </Button>
+      </ButtonsContainer>
       <TechnologiesContainer ref={carouselRef}>
-        <FrontBox>
+        {techs === "front"
+          ? frontTechs.map((techs) => (
+              <TechsBox key={techs.name}>
+                <ImgBox>
+                  <img src={techs.img} alt="" />
+                </ImgBox>
+                <TextBox>
+                  <span>{techs.name}</span>
+                </TextBox>
+              </TechsBox>
+            ))
+          : backTechs.map((techs) => (
+              <TechsBox key={techs.name}>
+                <ImgBox>
+                  <img src={techs.img} alt="" />
+                </ImgBox>
+                <TextBox>
+                  <span>{techs.name}</span>
+                </TextBox>
+              </TechsBox>
+            ))}
+      </TechnologiesContainer>
+    </TechnologiesSection>
+  );
+});
+export default Technologies;
+
+{
+  /* <FrontBox>
           <div>
             <h3>Front-End</h3>
           </div>
@@ -76,17 +112,5 @@ const Technologies = forwardRef((props, ref) => {
             <GiSandsOfTime />
             <span>Em construção...</span>
           </li>
-        </BackBox>
-      </TechnologiesContainer>
-      <DotsBox>
-        <Button onClick={() => scroll("left")} colorSchema={"--primary"}>
-          <Fcbuttons.FcPrevious />
-        </Button>
-        <Button onClick={() => scroll("right")} colorSchema={"--primary"}>
-          <Fcbuttons.FcNext />
-        </Button>
-      </DotsBox>
-    </TechnologiesSection>
-  );
-});
-export default Technologies;
+        </BackBox> */
+}

@@ -46,10 +46,10 @@ const HomePage = () => {
         <LandingSection ref={homeRef}>
           <AtomContainer>
             <h1>
-              <span>{t("title.one")}</span>
-              {t("title.two")}
+              <span>{t("greetings.one")}</span>
+              {t("greetings.two")}
             </h1>
-            <p>{t("title.three")}</p>
+            <p>{t("greetings.three")}</p>
             <HtmlBox>
               <img src={htmlImg} alt="" />
             </HtmlBox>

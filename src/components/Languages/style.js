@@ -18,7 +18,7 @@ export const MainContainer = styled.main`
   align-items: center;
   justify-content: center;
   position: fixed;
-  left: 2%;
+  right: 2%;
   top: 1%;
   z-index: 1;
   width: 32px;
@@ -38,6 +38,10 @@ export const MainContainer = styled.main`
     border: none;
     border-radius: 4px;
   }
+  @media (min-width: 1024px) {
+    right: 0.5%;
+    width: 40px;
+  }
 `;
 
 export const LanguagesList = styled.ul`
@@ -46,7 +50,7 @@ export const LanguagesList = styled.ul`
   align-items: baseline;
   justify-content: space-evenly;
   position: fixed;
-  left: 2%;
+  right: 2%;
   top: 7.4%;
   z-index: 1;
   animation: ${GrowOut} 300ms ease-in-out forwards;
@@ -68,5 +72,9 @@ export const LanguagesList = styled.ul`
       color: var(--white);
       font-size: 12px;
     }
+  }
+  @media (min-width: 1024px) {
+    right: 0.5%;
+    top: 6.4%;
   }
 `;

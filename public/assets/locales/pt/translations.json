@@ -1,7 +1,14 @@
 {
-  "title": {
+  "greetings": {
     "one": "Olá, ",
     "two": "sou Kennedy Barreto",
-    "three": "web developer full stack"
+    "three": "Web Weveloper Full Stack"
+  },
+  "aboutMe": {
+    "title": "SOBRE MIM",
+    "text": "Entusiasta da tecnologia, ingressando na carreira como desenvolvedor web full stack, acredito que o que me trouxe até aqui, foram as possibilidades, tanto de criação de novas funcionalidades, como, resolução de problemas. Apaixonado pela comunidade, sempre disposto a aprimorar e aprender novas linguagens e tecnologias."
+  },
+  "technologies": {
+    "title": "Tecnologias"
   }
 }

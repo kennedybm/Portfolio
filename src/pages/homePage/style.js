@@ -19,9 +19,10 @@ export const MainContainer = styled.main`
   flex-direction: column;
   align-items: center;
   background-color: var(--black);
+  background-image: url(https://media.giphy.com/media/3o6Zt0EiSgr1cWE6WY/giphy.gif);
+  background-size: 100vw 100vh;
   margin: 0 auto;
   height: 100%;
-  overflow: auto;
 `;
 
 export const LandingSection = styled.section`
@@ -37,12 +38,13 @@ export const AtomContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 203px;
-  height: 203px;
-  background-color: var(--primary);
+  width: 219px;
+  height: 219px;
   border: 1px solid var(--second);
+  background-image: url(https://media.giphy.com/media/3osxY5srzVZrwq3cFq/giphy.gif);
+  background-size: 100% 100%;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-right: 20px;
   position: relative;
   animation: ${AnimationDivScale} 3s;
   h1 {
@@ -55,8 +57,9 @@ export const AtomContainer = styled.div`
     color: var(--white);
   }
   @media (min-width: 1024px) {
-    width: 280px;
-    height: 280px;
+    width: 310px;
+    height: 310px;
+    margin-right: 0px;
     h1 {
       font-size: 21px;
     }
@@ -68,8 +71,8 @@ export const AtomContainer = styled.div`
   }
 `;
 export const HtmlBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 40%;
   position: absolute;
   animation: ${AtomDiv} 7s infinite linear;
   border-radius: 50%;
@@ -79,24 +82,24 @@ export const HtmlBox = styled.div`
   transform: translate(-50%, -50%);
   img {
     width: 35px;
-    transform: rotate(-203deg);
+    transform: rotate(-197deg);
     position: fixed;
-    top: 76.5%;
-    left: 60%;
+    top: 100.5%;
+    left: 57%;
   }
   @media (min-width: 1024px) {
     img {
       width: 60px;
-      transform: rotate(-203deg);
+      transform: rotate(-182deg);
       position: fixed;
-      top: 80.5%;
-      left: 60%;
+      top: 106.5%;
+      left: 35%;
     }
   }
 `;
 export const CssBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 40%;
   position: absolute;
   animation: ${AtomDiv} 7s infinite linear;
   border-radius: 50%;
@@ -106,24 +109,24 @@ export const CssBox = styled.div`
   transform: translate(-50%, -50%);
   img {
     width: 35px;
-    transform: rotate(339deg);
+    transform: rotate(344deg);
     position: fixed;
-    top: 10%;
-    left: 33%;
+    top: -18%;
+    left: 20%;
   }
   @media (min-width: 1024px) {
     img {
       width: 60px;
-      transform: rotate(338deg);
+      transform: rotate(358deg);
       position: fixed;
-      top: 2%;
-      left: 28%;
+      top: -36%;
+      left: 31%;
     }
   }
 `;
 export const JsBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 40%;
   position: absolute;
   animation: ${AtomDiv} 7s infinite linear;
   border-radius: 50%;
@@ -133,24 +136,24 @@ export const JsBox = styled.div`
   transform: translate(-50%, -50%);
   img {
     width: 31.5px;
-    transform: rotate(-295deg);
+    transform: rotate(-287deg);
     position: fixed;
-    top: 29%;
-    right: 12.6%;
+    top: 25%;
+    right: -27.4%;
   }
   @media (min-width: 1024px) {
     img {
       width: 55.5px;
-      transform: rotate(-291deg);
+      transform: rotate(-272deg);
       position: fixed;
-      top: 28%;
-      right: 3.6%;
+      top: 36%;
+      right: -49.4%;
     }
   }
 `;
 export const ReactBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 40%;
   position: absolute;
   animation: ${AtomDiv} 7s infinite linear;
   border-radius: 50%;
@@ -160,18 +163,18 @@ export const ReactBox = styled.div`
   transform: translate(-50%, -50%);
   img {
     width: 38.5px;
-    transform: rotate(-95deg);
+    transform: rotate(-55deg);
     position: fixed;
-    top: 55%;
-    left: 10%;
+    top: 58%;
+    left: -28%;
   }
   @media (min-width: 1024px) {
     img {
       width: 72.5px;
-      transform: rotate(-107deg);
+      transform: rotate(-150deg);
       position: fixed;
-      top: 52%;
-      left: 0%;
+      top: 31.5%;
+      left: -53%;
     }
   }
 `;
