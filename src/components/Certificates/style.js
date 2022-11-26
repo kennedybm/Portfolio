@@ -11,12 +11,13 @@ export const CertificatesSection = styled.section`
   h2 {
     color: var(--decor);
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Lexend", sans-serif;
   }
   @media (min-width: 1024px) {
     height: 80vh;
     h2 {
-      font-size: 33px;
+      font-size: 34px;
     }
   }
 `;
@@ -25,16 +26,13 @@ export const CertificatesContainer = styled.div`
   overflow: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   scroll-snap-type: x mandatory;
   width: 220px;
   height: 40vh;
   border-radius: 5px;
   scroll-behavior: smooth;
-  box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
-  -webkit-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
-  -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   &::-webkit-scrollbar {
     display: none;
   }
@@ -47,28 +45,30 @@ export const CertificatesContainer = styled.div`
   @media (min-width: 1024px) {
     width: 500px;
     height: 49vh;
+    padding-right: 16px;
+    border-radius: 5px;
   }
 `;
 
-export const FrontCertificateBox = styled.div`
+export const CertificatesBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
   width: 220px;
-  margin: 0px 7px 0px 20px;
   flex-shrink: 0;
   scroll-snap-align: start;
-  border-radius: 5px;
   cursor: zoom-in;
   img {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
   }
   @media (min-width: 1024px) {
-    width: 460px;
+    width: 506px;
     height: 47vh;
+    padding-left: 5px;
   }
 `;
 

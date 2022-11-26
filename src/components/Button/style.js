@@ -18,7 +18,6 @@ export const StyledButton = styled.button`
   background: ${(props) => Colors(props.colorSchema)};
   transform: ${(props) => props.type === "bottom" && "rotate(-180deg)"};
   border: none;
-  /* margin: 3px 0px 3px 0px; */
   font-size: 19px;
   &:hover {
     color: ${(props) =>

@@ -2,7 +2,7 @@
   "greetings": {
     "one": "Olá, ",
     "two": "sou Kennedy Barreto",
-    "three": "Web Weveloper Full Stack"
+    "three": "Web Developer Full Stack"
   },
   "aboutMe": {
     "title": "SOBRE MIM",
@@ -10,5 +10,11 @@
   },
   "technologies": {
     "title": "Tecnologias"
+  },
+  "certificates": {
+    "title": "Qualificações"
+  },
+  "projects": {
+    "title": "Projetos"
   }
 }

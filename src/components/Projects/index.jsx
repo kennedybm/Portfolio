@@ -1,4 +1,4 @@
-import { forwardRef, useState } from "react";
+import { forwardRef } from "react";
 import { useScrollTo } from "../../providers/scroll";
 import { useModal } from "../../providers/modal";
 import Button from "../Button";
@@ -11,39 +11,18 @@ import {
 } from "./style";
 import { TbViewportWide } from "react-icons/tb";
 import * as Fcbuttons from "react-icons/fc";
-import quadroImg from "../../assets/img/quadrodemedalhas.png";
-import carregandoImg from "../../assets/img/carregando.png";
+import { projectsList } from "../../data/projects";
+import { useTranslation } from "react-i18next";
 
 const Projects = forwardRef((props, ref) => {
+  const { t } = useTranslation();
+
   const { modalDb, setModalDb, handleProjectsModal, modalProjects } =
     useModal();
   const { projectsCarouselRef, scroll } = useScrollTo();
 
-  const [projectsDb, setProjectsDb] = useState([
-    {
-      id: 1,
-      name: "Quadro de Medalhas",
-      img: quadroImg,
-      description:
-        "Esta aplicação mostra o ranking dos países baseado na quantidade de medalhas, projeto simples deselvolvido com JS vanilla",
-      techs: ["HTML", "CSS3", "JavaScript"],
-      git: "https://github.com/Kenzie-Academy-Brasil-Developers/quadro-medalhas-kennedybm",
-      view: "https://kenzie-academy-brasil-developers.github.io/quadro-medalhas-kennedybm/",
-    },
-    {
-      id: 2,
-      name: "Em breve",
-      img: carregandoImg,
-    },
-    {
-      id: 3,
-      name: "Em breve",
-      img: carregandoImg,
-    },
-  ]);
-
   const sentToModal = (id) => {
-    const modalData = projectsDb.find((item) => item.id === id);
+    const modalData = projectsList.find((item) => item.id === id);
     const newData = [...modalDb, modalData];
     setModalDb(newData);
     handleProjectsModal();
@@ -52,17 +31,19 @@ const Projects = forwardRef((props, ref) => {
   return (
     <ProjectsSection ref={ref}>
       {modalProjects && <Modal type="projects" />}
-      <h2>Projetos</h2>
+      <h2>{t("projects.title")}</h2>
       <ProjectsContainer ref={projectsCarouselRef}>
-        {projectsDb.map((item, index) => (
-          <ProjectsCards key={index}>
-            <h3>{item.name}</h3>
-            <img src={item.img} alt={item.name} />
-            <Button onClick={() => sentToModal(item.id)}>
-              <TbViewportWide />
-            </Button>
-          </ProjectsCards>
-        ))}
+        {projectsList
+          ? projectsList.map((item) => (
+              <ProjectsCards key={item.id}>
+                <h3>{item.name}</h3>
+                <img src={item.img} alt={item.name} />
+                <Button onClick={() => sentToModal(item.id)}>
+                  <TbViewportWide />
+                </Button>
+              </ProjectsCards>
+            ))
+          : null}
       </ProjectsContainer>
 
       <ButtonsContainer>

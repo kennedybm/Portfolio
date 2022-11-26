@@ -47,14 +47,18 @@ export const AtomContainer = styled.div`
   margin-right: 20px;
   position: relative;
   animation: ${AnimationDivScale} 3s;
+  font-size: 15px;
   h1 {
     color: var(--white);
+    font-family: "Inter", sans-serif;
   }
   span {
     color: var(--decor);
+    font-family: "Inter", sans-serif;
   }
   p {
     color: var(--white);
+    font-family: "Inter", sans-serif;
   }
   @media (min-width: 1024px) {
     width: 310px;
@@ -92,7 +96,7 @@ export const HtmlBox = styled.div`
       width: 60px;
       transform: rotate(-182deg);
       position: fixed;
-      top: 106.5%;
+      top: 110.5%;
       left: 35%;
     }
   }

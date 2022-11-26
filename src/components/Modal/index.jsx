@@ -8,14 +8,19 @@ import {
   LogoBox,
   DescBox,
   LinksContainer,
+  CloseModalBox,
+  TitleBox,
+  TitleButtonBox,
+  LinksGitBox,
+  LinksVisitBox,
 } from "./style";
 import { MdOutlineCloseFullscreen } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
-import { MdPageview } from "react-icons/md";
+import * as BiIcons from "react-icons/bi";
+import * as TBicons from "react-icons/tb";
 
 const Modal = ({ type }) => {
   const {
-    modalCertificates,
     handleCertificatesModal,
     modalDb,
     setModalDb,
@@ -37,17 +42,26 @@ const Modal = ({ type }) => {
     case "certificates":
       return (
         <>
-          {modalCertificates &&
-            modalDb &&
-            modalDb.map((item) => (
-              <ModalCertificates>
-                <img
-                  onClick={() => clearCertificatesModal()}
-                  src={item.img}
-                  alt=""
-                />
-              </ModalCertificates>
-            ))[0]}
+          {modalDb
+            ? modalDb.map((item) => (
+                <ModalCertificates>
+                  <img
+                    onClick={() => clearCertificatesModal()}
+                    src={item.img}
+                    alt=""
+                  />
+                  <CloseModalBox>
+                    <Button
+                      type="nohover"
+                      colorSchema={"--black"}
+                      onClick={() => clearCertificatesModal()}
+                    >
+                      <BiIcons.BiZoomOut />
+                    </Button>
+                  </CloseModalBox>
+                </ModalCertificates>
+              ))
+            : null}
         </>
       );
     case "projects":
@@ -58,10 +72,14 @@ const Modal = ({ type }) => {
             modalDb.map((item) => (
               <ModalProjects>
                 <TitleContainer>
-                  <h2>{item.name}</h2>
-                  <Button onClick={() => clearProjectModal()} type="nohover">
-                    <MdOutlineCloseFullscreen />
-                  </Button>
+                  <TitleBox>
+                    <h3>{item.name}</h3>
+                  </TitleBox>
+                  <TitleButtonBox>
+                    <Button onClick={() => clearProjectModal()} type="nohover">
+                      <MdOutlineCloseFullscreen />
+                    </Button>
+                  </TitleButtonBox>
                 </TitleContainer>
                 <LogoDescContainer onClick={() => clearProjectModal()}>
                   <LogoBox>
@@ -72,20 +90,26 @@ const Modal = ({ type }) => {
                   </DescBox>
                 </LogoDescContainer>
                 <LinksContainer>
-                  <a href={item.git} target="_blank" rel="noreferrer noopener">
-                    Repositório
-                    <AiFillGithub />
-                  </a>
-                  <div>
+                  <LinksGitBox>
+                    <a
+                      href={item.git}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Repositório
+                      <AiFillGithub />
+                    </a>
+                  </LinksGitBox>
+                  <LinksVisitBox>
                     <a
                       href={item.view}
                       target="_blank"
                       rel="noreferrer noopener"
                     >
-                      <span>Visitar</span>
-                      <MdPageview />
+                      Visitar
+                      <TBicons.TbWorld />
                     </a>
-                  </div>
+                  </LinksVisitBox>
                 </LinksContainer>
               </ModalProjects>
             ))[0]}

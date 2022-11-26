@@ -5,17 +5,18 @@ export const TechnologiesSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 75vh;
+  height: 78vh;
   background-color: var(--black);
   width: 100%;
   h2 {
     color: var(--decor);
     margin: 15px 0px 15px 0px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Lexend", sans-serif;
   }
   @media (min-width: 1024px) {
     h2 {
-      font-size: 33px;
+      font-size: 34px;
       margin: 15px 0px 15px 0px;
     }
   }
@@ -38,7 +39,7 @@ export const TechnologiesContainer = styled.ul`
   -webkit-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   @media (min-width: 768px) {
-    width: 610px;
+    width: 620px;
     height: 51vh;
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@ export const TechnologiesContainer = styled.ul`
     box-shadow: none;
   }
   @media (min-width: 1024px) {
-    width: 620px;
+    width: 630px;
     height: 51vh;
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@ export const TechsBox = styled.li`
   margin: 7px 0px 7px 0px;
   &:hover {
     img {
-      width: 45%;
+      width: 46%;
     }
   }
   @media (min-width: 768px) {
@@ -82,7 +83,7 @@ export const TechsBox = styled.li`
   }
 
   @media (min-width: 1024px) {
-    width: 290px;
+    width: 300px;
   }
 `;
 
@@ -101,12 +102,21 @@ export const ButtonsContainer = styled.div`
     width: 45%;
     border-radius: 6px;
     font-size: 12px;
+    font-family: "Inter", sans-serif;
     &:focus {
       outline: 1px solid var(--decor);
+      color: var(--decor);
+      font-size: 12px;
+    }
+    &:hover {
+      font-size: 12px;
     }
   }
   @media (min-width: 1024px) {
-    /* display: none; */
+    button {
+      height: 37px;
+      width: 44%;
+    }
   }
 `;
 
@@ -125,9 +135,11 @@ export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  width: 55%;
   span {
     color: var(--white);
+    font-size: 15px;
     font-weight: 500;
+    font-family: "Inter", sans-serif;
   }
 `;

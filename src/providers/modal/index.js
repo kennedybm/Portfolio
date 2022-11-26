@@ -10,6 +10,7 @@ export const ModalProvider = ({ children }) => {
   const handleCertificatesModal = () => {
     setModalCertificates(!modalCertificates);
   };
+
   const handleProjectsModal = () => {
     setModalProjects(!modalProjects);
   };

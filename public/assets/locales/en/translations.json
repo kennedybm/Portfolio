@@ -6,9 +6,15 @@
   },
   "aboutMe": {
     "title": "ABOUT ME",
-    "text": "Technology enthusiast, starting a carrer as a web developer full stack, i believe that what brought me here, were the possibilities, both for creation of new features and resolution of problems. Passionate abut the technology community, always willing to improve and learn new stacks and technologies"
+    "text": "Technology enthusiast, starting a carrer as a web developer full stack, i believe that what brought me here, were the possibilities, both for creation of new features and resolution of problems. Passionate abut the technology community, always willing to improve and learn new stacks and technologies."
   },
   "technologies": {
     "title": "Technologies"
+  },
+  "certificates": {
+    "title": "Certificates"
+  },
+  "projects": {
+    "title": "Projects"
   }
 }

@@ -11,11 +11,12 @@ export const ProjectsSection = styled.section`
   h2 {
     color: var(--decor);
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "Lexend", sans-serif;
   }
   @media (min-width: 1024px) {
     h2 {
-      font-size: 33px;
+      font-size: 34px;
     }
   }
 `;
@@ -24,22 +25,19 @@ export const ProjectsContainer = styled.div`
   overflow: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   scroll-snap-type: x mandatory;
-  width: 220px;
-  height: 40vh;
+  width: 230px;
+  height: 45vh;
   border-radius: 5px;
   scroll-behavior: smooth;
-  box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
-  -webkit-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
-  -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   &::-webkit-scrollbar {
     display: none;
   }
   @media (min-width: 1024px) {
-    width: 460px;
-    height: 40vh;
+    width: 710px;
+    height: 45vh;
   }
 `;
 
@@ -48,18 +46,18 @@ export const ProjectsCards = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  width: 220px;
-  margin: 0px 7px 0px 20px;
+  height: 45vh;
+  width: 230px;
   flex-shrink: 0;
   scroll-snap-align: start;
   border-radius: 5px;
-  background-color: var(--second);
+  background-color: var(--primary);
 
   h3 {
     font-size: 16px;
     color: var(--white);
     padding-bottom: 6px;
+    font-family: "Inter", sans-serif;
   }
   img {
     width: 90%;
@@ -71,6 +69,10 @@ export const ProjectsCards = styled.div`
     color: var(--white);
     padding-top: 5px;
     height: 20px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0px 10px 0px 0px;
+    border-radius: 5px;
   }
 `;
 
