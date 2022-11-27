@@ -62,9 +62,8 @@ export const ModalProjects = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   width: 300px;
-  height: 63vh;
+  height: 345px;
   background-color: var(--primary);
   position: fixed;
   top: 17%;

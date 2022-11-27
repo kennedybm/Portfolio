@@ -5,7 +5,7 @@ export const TechnologiesSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 78vh;
+  height: 430px;
   background-color: var(--black);
   width: 100%;
   h2 {
@@ -14,7 +14,13 @@ export const TechnologiesSection = styled.section`
     font-size: 25px;
     font-family: "Lexend", sans-serif;
   }
+  @media (min-width: 425px) {
+    height: 460px;
+  }
   @media (min-width: 1024px) {
+    justify-content: center;
+    height: 510px;
+
     h2 {
       font-size: 34px;
       margin: 15px 0px 15px 0px;
@@ -29,7 +35,7 @@ export const TechnologiesContainer = styled.ul`
   align-items: center;
   overflow-y: scroll;
   width: 220px;
-  height: 50vh;
+  height: 270px;
   border-radius: 5px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
@@ -38,19 +44,20 @@ export const TechnologiesContainer = styled.ul`
   box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   -webkit-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
+  @media (min-width: 425px) {
+    width: 265px;
+  }
   @media (min-width: 768px) {
-    width: 620px;
-    height: 51vh;
-    display: flex;
-    flex-direction: column;
+    width: 485px;
+    height: 300px;
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
     box-shadow: none;
   }
   @media (min-width: 1024px) {
-    width: 630px;
-    height: 51vh;
+    width: 739px;
+    height: 315px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -64,7 +71,7 @@ export const TechsBox = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 13vh;
+  height: 70px;
   width: 200px;
   flex-shrink: 0;
   border-radius: 5px;
@@ -78,12 +85,20 @@ export const TechsBox = styled.li`
       width: 46%;
     }
   }
-  @media (min-width: 768px) {
-    width: 290px;
+  @media (min-width: 425px) {
+    width: 235px;
   }
-
+  @media (min-width: 768px) {
+    width: 230px;
+  }
   @media (min-width: 1024px) {
-    width: 300px;
+    width: 230px;
+    height: 130px;
+    &:hover {
+      img {
+        width: 63%;
+      }
+    }
   }
 `;
 
@@ -113,6 +128,7 @@ export const ButtonsContainer = styled.div`
     }
   }
   @media (min-width: 1024px) {
+    margin: 15px 0px 0px 0px;
     button {
       height: 37px;
       width: 44%;
@@ -128,6 +144,11 @@ export const ImgBox = styled.div`
   img {
     width: 40%;
     padding-left: 20px;
+  }
+  @media (min-width: 1024px) {
+    img {
+      width: 55%;
+    }
   }
 `;
 

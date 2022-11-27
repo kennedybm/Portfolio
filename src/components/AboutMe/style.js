@@ -6,10 +6,10 @@ export const AboutMeSection = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 500px;
   background-color: var(--primary);
   @media (min-width: 1024px) {
-    height: 90vh;
+    height: 550px;
     flex-direction: row;
     justify-content: center;
   }

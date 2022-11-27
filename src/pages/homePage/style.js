@@ -60,6 +60,19 @@ export const AtomContainer = styled.div`
     color: var(--white);
     font-family: "Inter", sans-serif;
   }
+  @media (min-width: 425px) {
+    width: 300px;
+    height: 300px;
+    margin-right: 0px;
+    h1 {
+      font-size: 18px;
+    }
+    span {
+    }
+    p {
+      font-size: 17px;
+    }
+  }
   @media (min-width: 1024px) {
     width: 310px;
     height: 310px;
@@ -91,6 +104,15 @@ export const HtmlBox = styled.div`
     top: 100.5%;
     left: 57%;
   }
+  @media (min-width: 425px) {
+    img {
+      width: 50px;
+      transform: rotate(-181deg);
+      position: fixed;
+      top: 111.5%;
+      left: 37%;
+    }
+  }
   @media (min-width: 1024px) {
     img {
       width: 60px;
@@ -117,6 +139,15 @@ export const CssBox = styled.div`
     position: fixed;
     top: -18%;
     left: 20%;
+  }
+  @media (min-width: 425px) {
+    img {
+      width: 50px;
+      transform: rotate(360deg);
+      position: fixed;
+      top: -34%;
+      left: 37%;
+    }
   }
   @media (min-width: 1024px) {
     img {
@@ -145,6 +176,15 @@ export const JsBox = styled.div`
     top: 25%;
     right: -27.4%;
   }
+  @media (min-width: 425px) {
+    img {
+      width: 47.5px;
+      transform: rotate(-271deg);
+      position: fixed;
+      top: 37%;
+      right: -48.4%;
+    }
+  }
   @media (min-width: 1024px) {
     img {
       width: 55.5px;
@@ -171,6 +211,15 @@ export const ReactBox = styled.div`
     position: fixed;
     top: 58%;
     left: -28%;
+  }
+  @media (min-width: 425px) {
+    img {
+      width: 55px;
+      transform: rotate(-150deg);
+      position: fixed;
+      top: 35.5%;
+      left: -46%;
+    }
   }
   @media (min-width: 1024px) {
     img {
