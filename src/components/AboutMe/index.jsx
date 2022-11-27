@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import userImg from "../../assets/img/perfil.png";
+import userImg from "../../assets/img/perfil.jpg";
 import { useTranslation } from "react-i18next";
 import { AboutMeSection, ProfileImgBox, ProfileDescBox } from "./style";
 

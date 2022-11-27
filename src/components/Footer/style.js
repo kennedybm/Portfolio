@@ -12,23 +12,57 @@ export const FooterSection = styled.footer`
 export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 50%;
   height: 5vh;
+`;
+
+export const LinkedinBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
   a {
     color: var(--white);
     font-size: 22px;
-    text-decoration: none;
+    padding-right: 5px;
     &:hover {
       color: var(--decor);
       font-size: 23px;
     }
   }
-  @media (min-width: 1024px){
-    width: 20%;
-    a{
-      font-size: 27px;
+  @media (min-width: 1024px) {
+    a {
+      font-size: 26px;
+      &:hover {
+        font-size: 27px;
+      }
     }
+  }
+`;
+
+export const GitBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+  a {
+    color: var(--white);
+    font-size: 22px;
+    padding-left: 5px;
+    &:hover {
+      color: var(--decor);
+      font-size: 23px;
+    }
+  }
+  @media (min-width: 1024px) {
+    a {
+      font-size: 26px;
+      &:hover {
+        font-size: 27px;
+      }
+    }
+  }
 `;
 
 export const DescriptionContainer = styled.div`
@@ -40,7 +74,18 @@ export const DescriptionContainer = styled.div`
   height: 10vh;
   color: var(--white);
   p {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-size: 13px;
+    width: 70%;
+    max-width: 225px;
+    font-family: "Inter", sans-serif;
   }
-  span {
+  @media (min-width: 1024px) {
+    p {
+      font-size: 17px;
+      max-width: 300px;
+    }
   }
 `;

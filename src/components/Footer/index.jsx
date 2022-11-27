@@ -1,5 +1,11 @@
 import { forwardRef } from "react";
-import { FooterSection, SocialContainer, DescriptionContainer } from "./style";
+import {
+  FooterSection,
+  SocialContainer,
+  DescriptionContainer,
+  GitBox,
+  LinkedinBox,
+} from "./style";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
@@ -8,26 +14,30 @@ const Footer = forwardRef((props, ref) => {
   return (
     <FooterSection ref={ref}>
       <SocialContainer>
-        <a
-          href="https://www.linkedin.com/in/kennedy-barreto-09870723a/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href="https://github.com/kennedybm"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <BsGithub />
-        </a>
+        <LinkedinBox>
+          <a
+            href="https://www.linkedin.com/in/kennedy-barreto-09870723a/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsLinkedin />
+          </a>
+        </LinkedinBox>
+
+        <GitBox>
+          <a
+            href="https://github.com/kennedybm"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <BsGithub />
+          </a>
+        </GitBox>
       </SocialContainer>
       <DescriptionContainer>
-        <p>Criado por Kennedy Barreto - 2022</p>
-        <span>
-          Todos direitos reservados <AiOutlineCopyrightCircle />
-        </span>
+        <p>
+          Copyright <AiOutlineCopyrightCircle /> 2022 Kennedy Barreto
+        </p>
       </DescriptionContainer>
     </FooterSection>
   );
