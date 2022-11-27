@@ -62,6 +62,7 @@ export const ModalProjects = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   width: 300px;
   height: 63vh;
   background-color: var(--primary);
@@ -75,8 +76,8 @@ export const ModalProjects = styled.section`
   -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   @media (min-width: 1024px) {
     width: 655px;
-    height: 70vh;
-    top: 15%;
+    height: 560px;
+    top: 6%;
   }
 `;
 
@@ -87,6 +88,7 @@ export const TitleContainer = styled.div`
   height: 8vh;
   @media (min-width: 1024px) {
     margin-top: 5px;
+    height: 50px;
   }
 `;
 
@@ -124,6 +126,7 @@ export const TitleButtonBox = styled.div`
   @media (min-width: 1024px) {
     button {
       font-size: 25px;
+      padding-left: 60px;
     }
   }
 `;
@@ -136,7 +139,7 @@ export const LogoDescContainer = styled.div`
   height: 46vh;
   margin: 6px 0px 0px 0px;
   @media (min-width: 1024px) {
-    height: 51vh;
+    height: 450px;
   }
 `;
 export const LogoBox = styled.div`
@@ -145,33 +148,47 @@ export const LogoBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 46vh;
+  height: 150px;
+  margin-bottom: 5px;
   img {
     width: 95%;
     height: 100%;
     border-radius: 5px;
   }
   @media (min-width: 1024px) {
-    height: 70vh;
+    height: 45vh;
   }
 `;
 export const DescBox = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   width: 90%;
-  height: 30vh;
+  height: 100px;
   text-align: start;
-
+  overflow-y: scroll;
   p {
     font-size: 14px;
     color: var(--white);
     font-family: "Inter", sans-serif;
   }
+  &::-webkit-scrollbar {
+    width: 9px;
+    background-color: var(--primary);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--second);
+    border-radius: 3px;
+  }
   @media (min-width: 1024px) {
+    margin-top: 5px;
+    height: 150px;
+    &::-webkit-scrollbar {
+      width: 11px;
+    }
     p {
-      font-size: 20px;
+      font-size: 19px;
     }
   }
 `;
@@ -183,6 +200,7 @@ export const LinksContainer = styled.div`
   width: 100%;
   height: 8vh;
   @media (min-width: 1024px) {
+    height: 50px;
   }
 `;
 

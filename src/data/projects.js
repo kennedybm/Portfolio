@@ -1,5 +1,6 @@
 import quadroImg from "../assets/img/quadrodemedalhas.png";
 import loadingImg from "../assets/img/carregando.png";
+import quackImg from "../assets/img/quackritics.png";
 
 export const projectsList = [
   {
@@ -14,8 +15,13 @@ export const projectsList = [
   },
   {
     id: 2,
-    name: "Em breve",
-    img: loadingImg,
+    name: "Quackritics",
+    img: quackImg,
+    description:
+      "Quackritics é uma aplicação desenvolvida pensando nos amantes do cinema, onde os usuários podem se cadastras, avaliar e fazer reviews dos seus filmes e séries favoritos, além de editar o próprio perfil. Projeto de conclusão do modúlo de React na Kenzie Academy Brasil",
+    techs: ["HTML", "CSS", "Javascript", "React"],
+    git: "https://github.com/kennedybm/quack-ritics",
+    view: "https://project-quackritics.vercel.app/",
   },
   {
     id: 3,
