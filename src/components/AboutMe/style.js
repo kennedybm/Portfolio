@@ -6,7 +6,7 @@ export const AboutMeSection = styled.section`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 530px;
   background-color: var(--primary);
   @media (min-width: 1024px) {
     height: 550px;
@@ -26,13 +26,17 @@ export const ProfileImgBox = styled.div`
     border-radius: 50%;
     border: 2px solid var(--second);
   }
+  @media (min-width: 425px) {
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
   @media (min-width: 1024px) {
     width: 45%;
     img {
       width: 260px;
       height: 260px;
-      border-radius: 50%;
-      border: 2px solid var(--second);
     }
   }
 `;
@@ -52,6 +56,11 @@ export const ProfileDescBox = styled.div`
   p {
     color: var(--white);
     font-family: "Inter", sans-serif;
+  }
+  @media (min-width: 425px) {
+    h2 {
+      font-size: 23px;
+    }
   }
   @media (min-width: 1024px) {
     padding-right: 60px;

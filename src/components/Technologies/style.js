@@ -15,7 +15,7 @@ export const TechnologiesSection = styled.section`
     font-family: "Lexend", sans-serif;
   }
   @media (min-width: 425px) {
-    height: 460px;
+    height: 440px;
   }
   @media (min-width: 1024px) {
     justify-content: center;
@@ -86,7 +86,7 @@ export const TechsBox = styled.li`
     }
   }
   @media (min-width: 425px) {
-    width: 235px;
+    width: 240px;
   }
   @media (min-width: 768px) {
     width: 230px;

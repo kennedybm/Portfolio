@@ -61,8 +61,8 @@ export const AtomContainer = styled.div`
     font-family: "Inter", sans-serif;
   }
   @media (min-width: 425px) {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin-right: 0px;
     h1 {
       font-size: 18px;
@@ -109,7 +109,7 @@ export const HtmlBox = styled.div`
       width: 50px;
       transform: rotate(-181deg);
       position: fixed;
-      top: 111.5%;
+      top: 108.5%;
       left: 37%;
     }
   }
@@ -145,7 +145,7 @@ export const CssBox = styled.div`
       width: 50px;
       transform: rotate(360deg);
       position: fixed;
-      top: -34%;
+      top: -33%;
       left: 37%;
     }
   }
@@ -182,7 +182,7 @@ export const JsBox = styled.div`
       transform: rotate(-271deg);
       position: fixed;
       top: 37%;
-      right: -48.4%;
+      right: -44.4%;
     }
   }
   @media (min-width: 1024px) {
@@ -218,7 +218,7 @@ export const ReactBox = styled.div`
       transform: rotate(-150deg);
       position: fixed;
       top: 35.5%;
-      left: -46%;
+      left: -45%;
     }
   }
   @media (min-width: 1024px) {

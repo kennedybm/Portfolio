@@ -5,7 +5,7 @@ export const CertificatesSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 360px;
   background-color: var(--primary);
   width: 100%;
   h2 {
@@ -29,8 +29,8 @@ export const CertificatesContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   scroll-snap-type: x mandatory;
-  width: 220px;
-  height: 40vh;
+  width: 230px;
+  height: 220px;
   border-radius: 5px;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
@@ -55,8 +55,8 @@ export const CertificatesBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
-  width: 220px;
+  height: 220px;
+  width: 230px;
   flex-shrink: 0;
   scroll-snap-align: start;
   cursor: zoom-in;
