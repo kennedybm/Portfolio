@@ -5,7 +5,7 @@ export const ProjectsSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 380px;
   background-color: var(--black);
   width: 100%;
   h2 {
@@ -14,7 +14,14 @@ export const ProjectsSection = styled.section`
     font-size: 25px;
     font-family: "Lexend", sans-serif;
   }
+  @media (min-width: 425px) {
+    height: 390px;
+    h2 {
+      font-size: 27px;
+    }
+  }
   @media (min-width: 1024px) {
+    height: 500px;
     h2 {
       font-size: 34px;
     }
@@ -28,16 +35,22 @@ export const ProjectsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   scroll-snap-type: x mandatory;
-  width: 230px;
-  height: 45vh;
+  width: 250px;
+  height: 250px;
   border-radius: 5px;
   scroll-behavior: smooth;
+  margin-right: 20px;
   &::-webkit-scrollbar {
     display: none;
   }
+  @media (min-width: 425px) {
+    width: 325px;
+    height: 270px;
+    margin-right: 0px;
+  }
   @media (min-width: 1024px) {
-    width: 710px;
-    height: 45vh;
+    width: 900px;
+    height: 280px;
   }
 `;
 
@@ -46,8 +59,8 @@ export const ProjectsCards = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45vh;
-  width: 230px;
+  height: 250px;
+  width: 250px;
   flex-shrink: 0;
   scroll-snap-align: start;
   border-radius: 5px;
@@ -70,16 +83,22 @@ export const ProjectsCards = styled.div`
     padding-top: 5px;
     height: 20px;
   }
+  @media (min-width: 425px) {
+    width: 325px;
+    height: 270px;
+  }
   @media (min-width: 1024px) {
     margin: 0px 10px 0px 0px;
     border-radius: 5px;
+    width: 293px;
+    height: 280px;
   }
 `;
 
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
-
+  padding-right: 16px;
   button {
     display: flex;
     align-items: center;
@@ -92,5 +111,8 @@ export const ButtonsContainer = styled.div`
     &:focus {
       outline: 1px solid var(--second);
     }
+  }
+  @media (min-width: 425px) {
+    padding-right: 0px;
   }
 `;

@@ -8,6 +8,8 @@ export const AboutMeSection = styled.section`
   width: 100%;
   height: 530px;
   background-color: var(--primary);
+  @media (min-width: 425px) {
+  }
   @media (min-width: 1024px) {
     height: 550px;
     flex-direction: row;
@@ -59,7 +61,7 @@ export const ProfileDescBox = styled.div`
   }
   @media (min-width: 425px) {
     h2 {
-      font-size: 23px;
+      font-size: 27px;
     }
   }
   @media (min-width: 1024px) {

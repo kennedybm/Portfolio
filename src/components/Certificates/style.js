@@ -14,8 +14,14 @@ export const CertificatesSection = styled.section`
     font-size: 25px;
     font-family: "Lexend", sans-serif;
   }
+  @media (min-width: 425px) {
+    height: 380px;
+    h2 {
+      font-size: 27px;
+    }
+  }
   @media (min-width: 1024px) {
-    height: 80vh;
+    height: 600px;
     h2 {
       font-size: 34px;
     }
@@ -42,9 +48,13 @@ export const CertificatesContainer = styled.div`
     border-radius: 5px;
     width: 30px;
   }
+  @media (min-width: 425px) {
+    width: 300px;
+    height: 240px;
+  }
   @media (min-width: 1024px) {
-    width: 500px;
-    height: 49vh;
+    width: 560px;
+    height: 400px;
     padding-right: 16px;
     border-radius: 5px;
   }
@@ -65,9 +75,13 @@ export const CertificatesBox = styled.div`
     height: 100%;
     border-radius: 8px;
   }
+  @media (min-width: 425px) {
+    width: 300px;
+    height: 240px;
+  }
   @media (min-width: 1024px) {
-    width: 506px;
-    height: 47vh;
+    width: 570px;
+    height: 400px;
     padding-left: 5px;
   }
 `;

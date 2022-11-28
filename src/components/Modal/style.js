@@ -27,6 +27,10 @@ export const ModalCertificates = styled.section`
     cursor: zoom-out;
     border-radius: 8px;
   }
+  @media (min-width: 425px) {
+    width: 400px;
+    height: 390px;
+  }
   @media (min-width: 1024px) {
     width: 750px;
   }
@@ -73,9 +77,14 @@ export const ModalProjects = styled.section`
   box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   -webkit-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
   -moz-box-shadow: 0px 1px 4px 3px rgba(57, 44, 65, 0.75);
+  @media (min-width: 425px) {
+    justify-content: center;
+    width: 395px;
+    height: 355px;
+  }
   @media (min-width: 1024px) {
-    width: 655px;
-    height: 560px;
+    width: 680px;
+    height: 570px;
     top: 6%;
   }
 `;
@@ -84,7 +93,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 8vh;
+  height: 45px;
   @media (min-width: 1024px) {
     margin-top: 5px;
     height: 50px;
@@ -106,7 +115,7 @@ export const TitleBox = styled.div`
   @media (min-width: 1024px) {
     justify-content: center;
     h3 {
-      font-size: 27px;
+      font-size: 28px;
     }
   }
 `;
@@ -124,8 +133,8 @@ export const TitleButtonBox = styled.div`
   }
   @media (min-width: 1024px) {
     button {
-      font-size: 25px;
-      padding-left: 60px;
+      font-size: 22px;
+      padding: 7px 0px 0px 52px;
     }
   }
 `;
@@ -135,8 +144,11 @@ export const LogoDescContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 46vh;
+  height: 253px;
   margin: 6px 0px 0px 0px;
+  @media (min-width: 425px) {
+    height: 257px;
+  }
   @media (min-width: 1024px) {
     height: 450px;
   }
@@ -154,6 +166,9 @@ export const LogoBox = styled.div`
     height: 100%;
     border-radius: 5px;
   }
+  @media (min-width: 425px) {
+    height: 155px;
+  }
   @media (min-width: 1024px) {
     height: 45vh;
   }
@@ -163,10 +178,11 @@ export const DescBox = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  width: 90%;
+  width: 94%;
   height: 100px;
   text-align: start;
   overflow-y: scroll;
+  padding-top: 3px;
   p {
     font-size: 14px;
     color: var(--white);
@@ -180,14 +196,17 @@ export const DescBox = styled.div`
     background-color: var(--second);
     border-radius: 3px;
   }
+  @media (min-width: 425px) {
+    width: 95%;
+  }
   @media (min-width: 1024px) {
     margin-top: 5px;
-    height: 150px;
+    height: 110px;
     &::-webkit-scrollbar {
       width: 11px;
     }
     p {
-      font-size: 19px;
+      font-size: 20px;
     }
   }
 `;
@@ -197,7 +216,7 @@ export const LinksContainer = styled.div`
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 8vh;
+  height: 40px;
   @media (min-width: 1024px) {
     height: 50px;
   }

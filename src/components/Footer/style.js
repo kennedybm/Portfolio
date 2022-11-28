@@ -6,15 +6,21 @@ export const FooterSection = styled.footer`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 100px;
   background-color: var(--primary);
+  @media (min-width: 1024px) {
+    height: 125px;
+  }
 `;
 export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 5vh;
+  height: 35px;
+  @media (min-width: 1024px) {
+    height: 45px;
+  }
 `;
 
 export const LinkedinBox = styled.div`
@@ -33,9 +39,9 @@ export const LinkedinBox = styled.div`
   }
   @media (min-width: 1024px) {
     a {
-      font-size: 26px;
+      font-size: 30px;
       &:hover {
-        font-size: 27px;
+        font-size: 32px;
       }
     }
   }
@@ -57,9 +63,9 @@ export const GitBox = styled.div`
   }
   @media (min-width: 1024px) {
     a {
-      font-size: 26px;
+      font-size: 30px;
       &:hover {
-        font-size: 27px;
+        font-size: 32px;
       }
     }
   }
@@ -71,21 +77,22 @@ export const DescriptionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 30px;
   color: var(--white);
   p {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
-    align-items: flex-end;
     font-size: 13px;
-    width: 70%;
-    max-width: 225px;
+    width: 225px;
     font-family: "Inter", sans-serif;
   }
   @media (min-width: 1024px) {
+    height: 45px;
     p {
       font-size: 17px;
-      max-width: 300px;
+      width: 290px;
     }
   }
 `;

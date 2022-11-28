@@ -16,6 +16,9 @@ export const TechnologiesSection = styled.section`
   }
   @media (min-width: 425px) {
     height: 440px;
+    h2 {
+      font-size: 27px;
+    }
   }
   @media (min-width: 1024px) {
     justify-content: center;
