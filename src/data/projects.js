@@ -2,6 +2,7 @@ import quadroImg from "../assets/img/quadrodemedalhas.png";
 import loadingImg from "../assets/img/carregando.png";
 import quackImg from "../assets/img/quackritics.png";
 import systemImg from "../assets/img/systemHotelDiagrams.png";
+import hubImg from "../assets/img/kenzieHub.png";
 
 export const projectsList = [
   {
@@ -36,8 +37,13 @@ export const projectsList = [
   },
   {
     id: 4,
-    name: "Em breve",
-    img: loadingImg,
+    name: "Kenzie Hub",
+    img: hubImg,
+    description:
+      "Projeto desenvolvido para auxiliar no gerenciamento de estudos, onde usuários podem se cadastrar, fazer login e adicionar as tecnologias e ferramentas que estiverem estudando, utilizado parar firmar o conceito de prop drilling no React",
+    techs: ["Javascript", "React", "HTML", "CSS"],
+    git: "https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Hub-Project",
+    view: "https://react-entrega-s2-kenzie-hub-kennedybm.vercel.app/",
   },
   {
     id: 5,
