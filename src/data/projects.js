@@ -1,6 +1,7 @@
 import quadroImg from "../assets/img/quadrodemedalhas.png";
 import loadingImg from "../assets/img/carregando.png";
 import quackImg from "../assets/img/quackritics.png";
+import systemImg from "../assets/img/systemHotelDiagrams.png";
 
 export const projectsList = [
   {
@@ -25,8 +26,13 @@ export const projectsList = [
   },
   {
     id: 3,
-    name: "Em breve",
-    img: loadingImg,
+    name: "System Hotel",
+    img: systemImg,
+    description:
+      "API desenvoldida para fazer gerenciamento de Hotéis, os usuários podem gerenciar desde, funcionários, clientes, quartos, reservas e serviços, projeto de conclusão do 4° módulo da Kenzie Academy Brasil",
+    techs: ["Javascript", "Typescript", "Node", "Express", "TypeORM"],
+    git: "https://github.com/CapstoneM4/System-Hotel",
+    view: "https://github.com/CapstoneM4/System-Hotel",
   },
   {
     id: 4,
