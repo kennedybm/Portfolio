@@ -8,12 +8,6 @@ export const ProjectsSection = styled.section`
   height: 380px;
   background-color: var(--black);
   width: 100%;
-  h2 {
-    color: var(--decor);
-    margin-bottom: 15px;
-    font-size: 25px;
-    font-family: "Lexend", sans-serif;
-  }
   @media (min-width: 425px) {
     height: 390px;
     h2 {
@@ -24,6 +18,44 @@ export const ProjectsSection = styled.section`
     height: 500px;
     h2 {
       font-size: 34px;
+    }
+  }
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 46px;
+  h2 {
+    color: var(--decor);
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: "Lexend", sans-serif;
+  }
+  p {
+    color: var(--decor);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Lexend", sans-serif;
+    padding: 0px 0px 12px 7px;
+    letter-spacing: 1px;
+  }
+  @media (min-width: 425px) {
+    h2 {
+      font-size: 27px;
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 175px;
+    padding-bottom: 6px;
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 22px;
     }
   }
 `;

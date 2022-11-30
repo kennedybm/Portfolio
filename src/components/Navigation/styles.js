@@ -18,6 +18,7 @@ export const NavContainer = styled.nav`
     margin: 3px 0px 3px 0px;
   }
   @media (min-width: 1024px) {
+    top: 31%;
     right: 0.5%;
     width: 45px;
     height: 255px;

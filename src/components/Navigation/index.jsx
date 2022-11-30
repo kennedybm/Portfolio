@@ -4,8 +4,6 @@ import Button from "../Button";
 import { RiHomeSmile2Line } from "react-icons/ri";
 import { BiUserPin } from "react-icons/bi";
 import { VscTools } from "react-icons/vsc";
-import { AiFillGithub } from "react-icons/ai";
-import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 
 const NavigationBar = () => {

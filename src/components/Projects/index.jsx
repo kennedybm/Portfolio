@@ -8,6 +8,7 @@ import {
   ProjectsContainer,
   ProjectsCards,
   ButtonsContainer,
+  TitleContainer,
 } from "./style";
 import { TbViewportWide } from "react-icons/tb";
 import * as Fcbuttons from "react-icons/fc";
@@ -31,7 +32,10 @@ const Projects = forwardRef((props, ref) => {
   return (
     <ProjectsSection ref={ref}>
       {modalProjects && <Modal type="projects" />}
-      <h2>{t("projects.title")}</h2>
+      <TitleContainer>
+        <h2>{t("projects.title")}</h2>{" "}
+        <p>({projectsList ? projectsList.length : null})</p>
+      </TitleContainer>
       <ProjectsContainer ref={projectsCarouselRef}>
         {projectsList
           ? projectsList.map((item) => (
@@ -45,7 +49,6 @@ const Projects = forwardRef((props, ref) => {
             ))
           : null}
       </ProjectsContainer>
-
       <ButtonsContainer>
         <Button
           onClick={() => scroll("projectsleft")}
